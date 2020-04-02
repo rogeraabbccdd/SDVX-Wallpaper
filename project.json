@@ -1,0 +1,119 @@
+{
+  "file": "index.html",
+  "preview": "preview.png",
+  "general": {
+    "properties": {
+      "schemecolor": {
+        "text": "Scheme color",
+        "type": "color",
+        "value": "0.7 0.2 0.1"
+      },
+      "modelName": {
+        "text": "Live2d Model",
+        "type": "combo",
+        "value": "grace_ver5",
+        "options": [{
+            "value": "grace_ver5",
+            "label": "Grace"
+          },
+          {
+            "value": "grace_yukata_ver5",
+            "label": "Grace Yukata"
+          },
+          {
+            "value": "kureha_ver5",
+            "label": "Kureha"
+          },
+          {
+            "value": "nianoa_ver5",
+            "label": "Nianoa"
+          },
+          {
+            "value": "rasis_ver5",
+            "label": "Rasis"
+          },
+          {
+            "value": "reimu_ver5",
+            "label": "Reimu"
+          },
+          {
+            "value": "right_ver5",
+            "label": "Right"
+          },
+          {
+            "value": "cocona_otona",
+            "label": "Cocona Otona"
+          },
+          {
+            "value": "left_ver5",
+            "label": "Left"
+          },
+          {
+            "value": "nana_ver5",
+            "label": "Nana"
+          },
+          {
+            "value": "natsuhi_otona",
+            "label": "Natsuhi Otona"
+          }
+        ]
+      },
+      "modelX" :
+      {
+          "text" : "Live2d X",
+          "type" : "slider",
+          "value" : 50,
+          "min" : 0,
+          "max" : 100
+      },
+      "modelY" :
+      {
+          "text" : "Live2d Y",
+          "type" : "slider",
+          "value" : 50,
+          "min" : 0,
+          "max" : 100
+      },
+      "modelSize" :
+      {
+          "text" : "Live2d Size",
+          "type" : "slider",
+          "value" : 50,
+          "min" : 0,
+          "max" : 100
+      },
+      "video": {
+        "text": "Video",
+        "type": "combo",
+        "value": "bg1",
+        "options": [{
+            "value": "bg1",
+            "label": "SDVX V HDD"
+          },
+          {
+            "value": "bg2",
+            "label": "SDVX V ANIMATED"
+          }
+        ]
+      },
+      "videoBright":
+      {
+          "text" : "Video brightness",
+          "type" : "slider",
+          "value" : 100,
+          "min" : 0,
+          "max" : 100
+      },
+      "volume":
+      {
+          "text" : "BGM volume",
+          "type" : "slider",
+          "value" : 0,
+          "min" : 0,
+          "max" : 100
+      }
+    }
+  },
+  "title": "Vivid Wave",
+  "type": "web"
+}
