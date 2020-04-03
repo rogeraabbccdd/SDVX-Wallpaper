@@ -2,6 +2,9 @@ let modelName = "grace_ver5"
 let model = new Live2dModel()
 model.loadModel(modelName);
 window.onresize = model.onResize()
+const bgVideo = document.getElementById("bg-video")
+const bg = document.getElementById('bg')
+const bgm = document.getElementById('bgm')
 window.wallpaperPropertyListener = {
   applyUserProperties(properties) {
     if (properties.modelName) {
@@ -24,16 +27,20 @@ window.wallpaperPropertyListener = {
     model.onResize();
 
     // other
-    if (properties.videoBright) {
-      document.getElementById("bg").style.filter = `brightness(${properties
-        .videoBright.value / 100})`;
+    if (properties.bgBright) {
+      bg.style.filter = `brightness(${properties
+        .bgBright.value / 100})`;
     }
-    if (properties.video) {
-      document.getElementById("bg-video").src =
-        "./assets/video/" + properties.video.value + ".webm";
+    if (properties.bgType) {
+      if(properties.bgType.value === 'video') {
+        bgVideo.style.display = 'inline'
+      }
+      else {
+        bgVideo.style.display = 'none'
+      }
     }
     if (properties.volume) {
-      document.getElementById("bgm").volume = properties.volume.value / 100;
+      bgm.volume = properties.volume.value / 100;
     }
   }
 };
