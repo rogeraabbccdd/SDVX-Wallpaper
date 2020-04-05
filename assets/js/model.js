@@ -2,9 +2,6 @@ class Live2dModel {
   constructor() {
     this.app = new PIXI.Application(1280, 720, { transparent: true })
     this.model = new LIVE2DCUBISMPIXI.ModelBuilder()
-    this.app.view.addEventListener("pointerup", this.onDragEnd(), false);
-    this.app.view.addEventListener("pointerout", this.onDragEnd(), false);
-    // this.app.view.addEventListener("pointermove", this.onDragMove(), false);
     this.pos_x = 0.0;
     this.pos_y = 0.0;
     this.emptyAnimation;
@@ -23,13 +20,14 @@ class Live2dModel {
     this.pos_y = 0.0;
   }
   onDragMove (event) {
-    let mouse_x = this.model.position.x - event.offsetX;
-    let mouse_y = this.model.position.y - event.offsetY;
+    let mouse_x = this.model.position.x - event.clientX;
+    let mouse_y = this.model.position.y - event.clientY;
     let height = this.app.screen.height / 2;
     let width = this.app.screen.width / 2;
     let scale = 1.0 - height / this.model.scale.y;
     this.pos_x = -mouse_x / height;
-    this.pos_y = -(mouse_y / width) + scale;
+    this.pos_y = -(mouse_y / width);// + scale;
+     
   }
   destroy() {
     this.app.destroy();
@@ -101,7 +99,7 @@ class Live2dModel {
     const folderPath = path + modelName + '/'
     if(modelName === 'grace_yukata_ver5') modelName = 'grace_yukata'
     let jsonPath = folderPath + (modelName === 'grace_ver5' ? modelName + '_0102' : modelName === 'rasis_ver5' ? modelName + '_0103' : modelName === "natsuhi_otona" ? modelName + '_0100' : modelName + '_0101')  + '.model3.json'
-    // let modelData = await fetch(jsonPath).then(response => response.json())
+    //let modelData = await fetch(jsonPath).then(response => response.json())
     let modelData = await $.ajax({url: jsonPath, dataType:'json'})
     modelData = modelData.FileReferences
     PIXI.loader.reset()
@@ -110,9 +108,9 @@ class Live2dModel {
       })
       .add("texture00", folderPath + modelData.Textures[0])
       .add("texture01", folderPath + modelData.Textures[1])
-      // .add("physics", folderPath + modelData.Physics, {
-      //   xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON
-      // })
+      .add("physics", folderPath + modelData.Physics, {
+      xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON
+      })
       .add("motion", folderPath + modelData.Motions.Idle[0].File, {
         xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON
       })
@@ -131,7 +129,7 @@ class Live2dModel {
           .setTimeScale(1)
           .addTexture(resources["texture00"].texture)
           .addTexture(resources["texture01"].texture)
-          // .setPhysics3Json(resources["physics"].data)
+          //.setPhysics3Json(resources["physics"].data)
           .addAnimatorLayer(
             "Motion",
             LIVE2DCUBISMFRAMEWORK.BuiltinAnimationBlenders.OVERRIDE,
