@@ -44,3 +44,22 @@ window.wallpaperPropertyListener = {
     }
   }
 };
+
+
+var onMouseDownFlag = 0;
+
+addEventListener('mousedown', function (e) {
+    model.onDragMove(e);
+    onMouseDownFlag = 1;
+}, false);
+
+addEventListener('mouseup', function (e) {
+    onMouseDownFlag = 0;
+    model.onDragEnd(e);
+}, false);
+
+addEventListener('mousemove', function (e) {
+    if(onMouseDownFlag){
+        model.onDragMove(e);
+    }
+}, false);
