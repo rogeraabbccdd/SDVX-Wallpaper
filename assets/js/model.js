@@ -109,6 +109,7 @@ class Live2dModel {
         xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER
       })
       .add("texture00", folderPath + modelData.Textures[0])
+      .add("texture01", folderPath + modelData.Textures[1])
       // .add("physics", folderPath + modelData.Physics, {
       //   xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON
       // })
@@ -128,7 +129,8 @@ class Live2dModel {
         this.model = new LIVE2DCUBISMPIXI.ModelBuilder()
           .setMoc(this.moc)
           .setTimeScale(1)
-          .addTexture(0, resources["texture00"].texture)
+          .addTexture(resources["texture00"].texture)
+          .addTexture(resources["texture01"].texture)
           // .setPhysics3Json(resources["physics"].data)
           .addAnimatorLayer(
             "Motion",

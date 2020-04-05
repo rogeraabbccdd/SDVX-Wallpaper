@@ -315,8 +315,8 @@ var LIVE2DCUBISMPIXI;
             this._userDataBuilder.setUserData3Json(value);
             return this;
         };
-        ModelBuilder.prototype.addTexture = function (index, texture) {
-            this._textures.splice(index, 0, texture);
+        ModelBuilder.prototype.addTexture = function (texture) {
+            this._textures.push(texture);
             return this;
         };
         ModelBuilder.prototype.addAnimatorLayer = function (name, blender, weight) {
