@@ -1,4 +1,4 @@
-let modelName = "rasis_ver5";
+let modelName = "konoha_ver5";
 let model = new Live2dModel();
 model.loadModel(modelName);
 // window.onresize = model.onResize();
@@ -47,6 +47,11 @@ window.wallpaperPropertyListener = {
 
 
 var onMouseDownFlag = 0;
+
+// addEventListener('dblclick',function(e){
+//   console.log(e);
+//   model.hitmotion();
+// },false);
 
 // addEventListener('mousedown', function (e) {
 //     model.onDragMove(e);

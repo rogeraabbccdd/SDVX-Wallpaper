@@ -4,7 +4,7 @@ class Live2dModel {
     constructor() {
         this.app = new PIXI.Application({width:1280,
             height:720,
-            
+            // resolution: window.devicePixelRatio || 1,
             transparent: true,
             autoStart: true,
             resizeTo: window,
@@ -122,6 +122,13 @@ class Live2dModel {
     //     );
     //     if (this.model.masks) this.model.masks.resize(this.app.view.width, this.app.view.height);
     // }
+
+
+    // hitmotion(){
+    //     this.model.motion("Ok",0,3);
+    // }
+
+
     async loadModel(modelName) {
         const path = './assets/live2d/';
         const folderPath = path + modelName + '/';
@@ -137,8 +144,15 @@ class Live2dModel {
         document.getElementById('live2d').appendChild(this.app.view);
         this.app.stage.addChild(modelData);
         // this.app.stage.addChild(modelData.mask);
-        modelData.scale.set(0.5);
-        modelData.motion('Idle',0,1);
+        modelData.scale.set(0.25);
+        modelData.motion('In',0,1);
+        modelData.buttonMode = true;
+        modelData.on("click",(e)=>{
+            this.model.motion("Ok",0,3);
+        });
+
+        this.model = modelData;
+        
         // this.app.stage.addChild(modelData);
         // this.app.stage.addChild(this.model);
         // this.model.scale.set(1.0);
