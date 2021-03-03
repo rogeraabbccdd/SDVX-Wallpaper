@@ -29,10 +29,11 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  position: relative;
-}
-
-#live2d>canvas{
+  /* position: relative; */
   bottom: 0;
   position: absolute;
 }
+
+/* #live2d>canvas{
+  
+} */
