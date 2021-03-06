@@ -27,38 +27,6 @@ class Live2dModel {
         this.times = 12;
     }
 
-
-    // intervalMinus(intervalx, intervaly) {
-
-    //     if (this.times > 0) {
-    //         this.pos_x -= intervalx;
-    //         this.pos_y -= intervaly;
-    //         this.times -= 1;
-    //     } else {
-    //         this.pos_x = 0.0;
-    //         this.pos_y = 0.0;
-    //         this.times = 12;
-    //         clearInterval(this.interval);
-    //     }
-    // }
-
-    // onDragEnd(event) {
-    //     var intervalx = (this.pos_x - 0) / 12;
-    //     var intervaly = (this.pos_y - 0) / 12;
-    //     this.interval = setInterval(() => (this.intervalMinus(intervalx, intervaly)), 20);
-    // }
-
-    // onDragMove(event) {
-    //     clearInterval(this.interval);
-    //     let mouse_x = this.model.position.x - event.clientX;
-    //     let mouse_y = this.model.position.y - event.clientY;
-    //     let height = this.app.screen.height / 2;
-    //     let width = this.app.screen.width / 2;
-    //     let scale = 1.0 - height / this.model.scale.y;
-    //     this.pos_x = -mouse_x / height;
-    //     this.pos_y = -(mouse_y / width); // + scale;
-
-    // }
     destroy() {
             this.app.destroy();
             this.model = null;
@@ -119,13 +87,8 @@ class Live2dModel {
         console.log([this.model.x, this.model.y]);
         this.model.scale.set(width * this.modelSize * 1.2 / 10000);
         console.log(width * this.modelSize * 1.2 / 10000);
-        // if (this.model.masks) this.model.masks.resize(this.app.view.width, this.app.view.height);
+        if (this.model.masks) this.model.masks.resize(this.app.view.width, this.app.view.height);
     }
-
-
-    // hitmotion(){
-    //     this.model.motion("Ok",0,3);
-    // }
 
 
     async loadModel(modelName) {
@@ -143,10 +106,6 @@ class Live2dModel {
         const folderPath = path + modelName + '/';
         if (modelName === 'grace_yukata_ver5') modelName = 'grace_yukata';
         let jsonPath = folderPath + (modelName === 'grace_ver5' ? modelName + '_0102' : modelName === 'rasis_ver5' ? modelName + '_0103' : modelName === "natsuhi_otona" ? modelName + '_0100' : modelName + '_0101') + '.model3.json';
-        //let modelData = await fetch(jsonPath).then(response => response.json())
-        // let modelData = await $.ajax({ url: jsonPath, dataType: 'json' });
-        // modelData = modelData.FileReferences;
-        // console.log(modelData);
         console.log(jsonPath);
         let modelData = await live2d.Live2DModel.from(jsonPath, { idleMotionGroup: 'Idle', motionPreload: "ALL" });
         this.model = modelData;
@@ -171,62 +130,6 @@ class Live2dModel {
         live2d.config.logLevel = 0;
         this.model = modelData;
         this.onResize("");
-        // this.app.stage.addChild(modelData);
-        // this.app.stage.addChild(this.model);
-        // this.model.scale.set(1.0);
-        // PIXI.Loader.shared.reset();
-        // PIXI.Loader.shared.add("moc", folderPath + modelData.Moc, {
-        //         xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.BUFFER
-        //     })
-        //     .add("texture00", folderPath + modelData.textures[0].)
-        //     .add("texture01", folderPath + modelData.textures[1])
-        //     .add("physics", folderPath + modelData.Physics, {
-        //         xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.JSON
-        //     })
-        //     .add("motion", folderPath + modelData.Motions.Idle[0].File, {
-        //         xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.JSON
-        //     })
-        //     .add("emptymotion", folderPath + modelData.Motions.Idle[0].File, {
-        //         xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.JSON
-        //     })
-        //     .load((loader, resources) => {
-        //         this.app.destroy();
-        //         this.app = new PIXI.Application(1280, 720, { transparent: true });
-        //         document.getElementById('live2d').innerHTML = '';
-        //         document.getElementById('live2d').appendChild(this.app.view);
-        //         this.moc = Live2DCubismCore.Moc.fromArrayBuffer(resources["moc"].data);
-        //         this.model = 0;
-        //         this.model = new LIVE2DCUBISMPIXI.ModelBuilder()
-        //             .setMoc(this.moc)
-        //             .setTimeScale(1)
-        //             .addTexture(resources["texture00"].texture)
-        //             .addTexture(resources["texture01"].texture)
-        //             //.setPhysics3Json(resources["physics"].data)
-        //             .addAnimatorLayer(
-        //                 "Motion",
-        //                 LIVE2DCUBISMFRAMEWORK.BuiltinAnimationBlenders.OVERRIDE,
-        //                 1
-        //             )
-        //             .addAnimatorLayer(
-        //                 "Drag",
-        //                 LIVE2DCUBISMFRAMEWORK.BuiltinAnimationBlenders.OVERRIDE,
-        //                 1
-        //             )
-        //             .build();
-        //         if (this.app.stage.children.length > 0) {
-        //             for (let i = this.app.stage.children.length - 1; i >= 0; i--) {
-        //                 this.app.stage.removeChild(this.app.stage.children[i]);
-        //             }
-        //             this.model.scale = new PIXI.Point(0, 0);
-        //         }
-        //         this.app.stage.addChild(this.model);
-        //         this.app.stage.addChild(this.model.masks);
-        //         // let animation = LIVE2DCUBISMFRAMEWORK.Animation.fromMotion3Json(
-        //         //     resources["motion"].data
-        //         // );
-        //         // this.emptyAnimation = LIVE2DCUBISMFRAMEWORK.Animation.fromMotion3Json(
-        //         //     resources["emptymotion"].data
-        //         // );
         //         this.model.animator.getLayer("Motion").play(animation);
         //         this.app.ticker.add((deltaTime) => {
         //             this.model.update(deltaTime);
