@@ -2,3 +2,5 @@ assets/js/live2dcubismcore.min.js
 assets/sound/*
 assets/live2d/*
 assets/video/bg1.webm
+.jshintrc
+.DS_Store
