@@ -16,12 +16,13 @@ SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/
 ## Features
 - Loading model from SDVX.
 - Clicking on model gives motion reaction.
-- Support X,Y cordinate and size adjustment in Wallpaper Engine.
+- Support X,Y cordinate and size adjustment in Wallpaper Engine.(Some model would be too big or small)
 
 ## Future Features
 - [ ] Auto random motions.
 - [ ] Allow edit click motion reaction.
 - [ ] Precise X,Y,and size adjustment.
+- [ ] Fix changing models bug.
 
 
 ## Credits
