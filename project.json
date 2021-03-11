@@ -88,7 +88,7 @@
                 "text": "Live2d Size",
                 "type": "slider",
                 "value": 50,
-                "min": 0,
+                "min": 1,
                 "max": 100
             },
             "bgType": {

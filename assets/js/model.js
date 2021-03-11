@@ -4,7 +4,7 @@ class Live2dModel {
         this.app = new PIXI.Application({
             width: 1280,
             height: 720,
-            // resolution: window.devicePixelRatio || 1,
+            resolution: window.devicePixelRatio || 1,
             transparent: true,
             autoStart: true,
             resizeTo: window,
@@ -63,7 +63,7 @@ class Live2dModel {
         this.app = new PIXI.Application({
             width: 1280,
             height: 720,
-            // resolution: window.devicePixelRatio || 1,
+            resolution: window.devicePixelRatio || 1,
             transparent: true,
             autoStart: true,
             resizeTo: window,
@@ -86,7 +86,7 @@ class Live2dModel {
         //modelData.scale.set(0.25);
         await this.model.motion('In', 0, 2);
         //modelData.buttonMode = true;
-        this.model.on('click', (e) => {
+        this.model.on('pointerdown', (e) => {
             this.model.motion("Ok", 0, 2);
         });
         this.model.anchor.set(0.5, 0.5);

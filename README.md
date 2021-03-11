@@ -13,5 +13,18 @@ SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/
 - Get your favorite SDVX wallpaper image, and put it in `assets/background/bg.jpg`.
 - Import folder to Wallpaper Engine. 
 
+## Features
+- Loading model from SDVX.
+- Clicking on model gives motion reaction.
+- Support X,Y cordinate and size adjustment in Wallpaper Engine.(Some model would be too big or small)
+
+## Future Features
+- [ ] Auto random motions.
+- [ ] Allow edit click motion reaction.
+- [ ] Precise X,Y,and size adjustment.
+- [ ] Fix changing models bug.
+
+
 ## Credits
 - Default `bg.webm` is taken from [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1940540424)
+- Live2D framework from [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display), if you like this work, don't forget to star this project too!
