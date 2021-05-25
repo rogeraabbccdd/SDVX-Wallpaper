@@ -14,31 +14,31 @@
                 "value": "grace_ver5",
                 "options": [{
                         "value": "grace_ver5",
-                        "label": "Grace"
+                        "label": "Grace Ver.5"
                     },
                     {
                         "value": "grace_yukata_ver5",
-                        "label": "Grace Yukata"
+                        "label": "Grace Yukata Ver.5"
                     },
                     {
                         "value": "kureha_ver5",
-                        "label": "Kureha"
+                        "label": "Kureha Ver.5"
                     },
                     {
                         "value": "nianoa_ver5",
-                        "label": "Nianoa"
+                        "label": "Nianoa Ver.5"
                     },
                     {
                         "value": "rasis_ver5",
-                        "label": "Rasis"
+                        "label": "Rasis Ver.5"
                     },
                     {
                         "value": "reimu_ver5",
-                        "label": "Reimu"
+                        "label": "Reimu Ver.5"
                     },
                     {
                         "value": "right_ver5",
-                        "label": "Right"
+                        "label": "Right Ver.5"
                     },
                     {
                         "value": "cocona_otona",
@@ -46,11 +46,11 @@
                     },
                     {
                         "value": "left_ver5",
-                        "label": "Left"
+                        "label": "Left Ver.5"
                     },
                     {
                         "value": "nana_ver5",
-                        "label": "Nana"
+                        "label": "Nana Ver.5"
                     },
                     {
                         "value": "natsuhi_otona",
@@ -58,7 +58,7 @@
                     },
                     {
                         "value": "konoha_ver5",
-                        "label": "Konoha"
+                        "label": "Konoha Ver.5"
                     },
                     {
                         "value": "kureha_9thkac",
@@ -67,6 +67,18 @@
                     {
                         "value": "kureha_666",
                         "label": "Kureha 666"
+                    },
+                    {
+                        "value": "grace_ver6",
+                        "label": "Grace Ver.6"
+                    },
+                    {
+                        "value": "grace_ver6april",
+                        "label": "Grace Ver.6 April"
+                    },
+                    {
+                        "value": "rasis_ver6",
+                        "label": "Rasis Ver.6"
                     }
                 ]
             },
