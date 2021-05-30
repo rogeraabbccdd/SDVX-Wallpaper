@@ -67,7 +67,20 @@
                     {
                         "value": "kureha_666",
                         "label": "Kureha 666"
+                    },
+                    {
+                        "value": "rasis_ver6",
+                        "label": "Rasis VI"
+                    },
+                    {
+                        "value": "grace_ver6",
+                        "label": "Grace VI"
+                    },
+                    {
+                        "value": "grace_ver6april",
+                        "label": "Grace VI April"
                     }
+                    
                 ]
             },
             "modelX": {

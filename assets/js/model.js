@@ -20,7 +20,7 @@ class Live2dModel {
         this.param_eye_ball_x = 0;
         this.param_eye_ball_y = 0;
         this.moc;
-        this.modelSize = 1;
+        this.modelSize = 50;
         this.modelX = 0;
         this.modelY = 0;
         this.interval;
@@ -44,7 +44,7 @@ class Live2dModel {
         }
         console.log(event);
         let width = window.innerWidth;
-        let height = (width / 16.0) * 9.0;
+        let height = window.innerHeight;
         //this.app.renderer.resize(width, height);
         let scale = height / this.originalHeight;
         console.log([height, this.model.height, this.originalHeight]);
@@ -77,7 +77,7 @@ class Live2dModel {
         if (modelName === 'grace_yukata_ver5') modelName = 'grace_yukata';
         let jsonPath = folderPath + (modelName === 'grace_ver5' ? modelName + '_0102' : modelName === 'rasis_ver5' ? modelName + '_0103' : modelName === "natsuhi_otona" ? modelName + '_0100' : modelName + '_0101') + '.model3.json';
         console.log(jsonPath);
-        let modelData = await live2d.Live2DModel.from(jsonPath, { idleMotionGroup: 'Idle', motionPreload: "ALL" });
+        let modelData = await live2d.Live2DModel.from(jsonPath, { idleMotionGroup: 'Idle', motionPreload: "ALL", autoInteract: false });
         this.model = modelData;
         console.log(this.model);
         document.getElementById('live2d').appendChild(this.app.view);
@@ -86,9 +86,20 @@ class Live2dModel {
         //modelData.scale.set(0.25);
         await this.model.motion('In', 0, 2);
         //modelData.buttonMode = true;
-        this.model.on('pointerdown', (e) => {
-            this.model.motion("Ok", 0, 2);
-        });
+        // this.model.on('pointerdown', (e) => {
+        //     this.model.motion("Ok", 0, 2);
+        // });
+        // this.model.on('pointermove', (e) => {
+        //     this.model.focus(e.clientX, e.clientY);
+        // });
+
+        // let testInteraction = new PIXI.InteractionManager(this.app.renderer);
+
+        // this.model.registerInteraction(testInteraction);
+
+
+
+
         this.model.anchor.set(0.5, 0.5);
         this.originalHeight = this.model.height;
 
