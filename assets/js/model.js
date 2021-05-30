@@ -45,10 +45,10 @@ class Live2dModel {
         console.log(event);
         let width = window.innerWidth;
         let height = window.innerHeight;
-        //this.app.renderer.resize(width, height);
+
         let scale = height / this.originalHeight;
         console.log([height, this.model.height, this.originalHeight]);
-        // this.model.position = new PIXI.Point(width * this.modelX / 100, height * this.modelY / 100);
+
         this.model.x = width / 2 + this.modelX * 9;
         this.model.y = height / 2 + this.modelY * 3;
         console.log([this.model.x, this.model.y]);
@@ -82,60 +82,14 @@ class Live2dModel {
         console.log(this.model);
         document.getElementById('live2d').appendChild(this.app.view);
         this.app.stage.addChild(this.model);
-        // this.app.stage.addChild(modelData.mask);
-        //modelData.scale.set(0.25);
         await this.model.motion('In', 0, 2);
-        //modelData.buttonMode = true;
-        // this.model.on('pointerdown', (e) => {
-        //     this.model.motion("Ok", 0, 2);
-        // });
-        // this.model.on('pointermove', (e) => {
-        //     this.model.focus(e.clientX, e.clientY);
-        // });
-
-        // let testInteraction = new PIXI.InteractionManager(this.app.renderer);
-
-        // this.model.registerInteraction(testInteraction);
-
 
 
 
         this.model.anchor.set(0.5, 0.5);
         this.originalHeight = this.model.height;
-
         live2d.config.logLevel = 0;
-        // this.model = modelData;
         this.onResize("");
-        //         this.model.animator.getLayer("Motion").play(animation);
-        //         this.app.ticker.add((deltaTime) => {
-        //             this.model.update(deltaTime);
-        //             this.model.masks.update(this.app.renderer);
-        //             this.updateParameter();
-        //         });
 
-        //         this.param_angle_x = this.model.parameters.ids.indexOf("PARAM_ANGLE_X");
-        //         if (this.param_angle_x < 0) {
-        //             this.param_angle_x = this.model.parameters.ids.indexOf("ParamAngleX");
-        //         }
-        //         this.param_angle_y = this.model.parameters.ids.indexOf("PARAM_ANGLE_Y");
-        //         if (this.param_angle_y < 0) {
-        //             this.param_angle_y = this.model.parameters.ids.indexOf("ParamAngleY");
-        //         }
-        //         this.param_body_angle_x = this.model.parameters.ids.indexOf(
-        //             "PARAM_BODY_ANGLE_X"
-        //         );
-        //         if (this.param_body_angle_x < 0) {
-        //             this.param_body_angle_x = this.model.parameters.ids.indexOf("ParamBodyAngleX");
-        //         }
-        //         this.param_eye_ball_x = this.model.parameters.ids.indexOf("PARAM_EYE_BALL_X");
-        //         if (this.param_eye_ball_x < 0) {
-        //             this.param_eye_ball_x = this.model.parameters.ids.indexOf("ParamEyeBallX");
-        //         }
-        //         this.param_eye_ball_y = this.model.parameters.ids.indexOf("PARAM_EYE_BALL_Y");
-        //         if (this.param_eye_ball_y < 0) {
-        //             this.param_eye_ball_y = this.model.parameters.ids.indexOf("ParamEyeBallY");
-        //         }
-        //         this.onResize();
-        //     });
     }
 }

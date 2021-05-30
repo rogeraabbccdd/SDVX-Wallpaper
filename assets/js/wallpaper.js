@@ -97,7 +97,7 @@ document.getElementById('live2d').addEventListener('pointerup', (e) => {
     model.model.focus(width / 2 + model.modelX * 9, height / 2 + model.modelY * 3);
 })
 
-document.getElementById('live2d').addEventListener('dblclick', (e) => {
+document.getElementById('live2d').addEventListener('onclick', (e) => {
     model.model.motion("Ok", 0, 2);
 });
 
