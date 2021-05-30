@@ -25,7 +25,7 @@ SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/
 - [ ] Auto random motions.
 - [ ] Allow edit click motion reaction.
 - [ ] Precise X,Y,and size adjustment.
-- [ ] Fix changing models bug.
+- [x] Fix changing models bug.
 
 
 ## Credits

@@ -70,16 +70,18 @@
                     },
                     {
                         "value": "grace_ver6",
-                        "label": "Grace Ver.6"
+                        "label": "Grace VI"
                     },
                     {
                         "value": "grace_ver6april",
-                        "label": "Grace Ver.6 April"
+                        "label": "Grace VI April"
                     },
                     {
                         "value": "rasis_ver6",
-                        "label": "Rasis Ver.6"
+                        "label": "Rasis VI"
+
                     }
+                    
                 ]
             },
             "modelX": {
