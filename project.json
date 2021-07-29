@@ -79,7 +79,10 @@
                     {
                         "value": "rasis_ver6",
                         "label": "Rasis VI"
-
+                    },
+                    {
+                        "value": "tsumabuki_ver6",
+                        "label": "Tsumabuki"
                     }
                     
                 ]
