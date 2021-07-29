@@ -38,6 +38,9 @@ window.wallpaperPropertyListener = {
                 case "cocona_otona":
                     setTimeout(() => { model.loadModel(modelName) }, 1420);
                     break;
+                case "tsumabuki_ver6":
+                    setTimeout(() => { model.loadModel(modelName) }, 1500);
+                    break;
                 default:
                     setTimeout(() => { model.loadModel(modelName) }, 1800);
                     break;
