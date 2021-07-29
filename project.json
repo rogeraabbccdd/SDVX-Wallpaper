@@ -126,7 +126,7 @@
                 "min": 0,
                 "max": 100
             },
-            "volume": {
+            "bgm": {
                 "text": "BGM volume",
                 "type": "slider",
                 "value": 0,

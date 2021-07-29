@@ -71,8 +71,8 @@ window.wallpaperPropertyListener = {
                 bgVideo.style.display = 'none';
             }
         }
-        if (properties.volume) {
-            bgm.volume = properties.volume.value / 100;
+        if (properties.bgm) {
+            bgm.volume = properties.bgm.value / 100;
         }
         model.onResize("t");
     }
