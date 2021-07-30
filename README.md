@@ -1,5 +1,5 @@
 # SDVX Live2D Wallpaper
-SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), support all Live2D models from SDVX VI 2021042800  
+SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), support all Live2D models from SDVX VI 2021062900  
   
 ![screenshot1](screenshot1.jpg)
 ![screenshot2](screenshot2.png)

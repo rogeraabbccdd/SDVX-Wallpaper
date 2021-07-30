@@ -69,9 +69,9 @@ class Live2dModel {
             resizeTo: window,
             antialias: true,
         });
-        live2d.config.motionFadingDuration = 0;
-        live2d.config.idleMotionFadingDuration = 0;
-        live2d.config.expressionFadingDuration = 0;
+        //live2d.config.motionFadingDuration = 0;
+        //live2d.config.idleMotionFadingDuration = 0;
+        //live2d.config.expressionFadingDuration = 0;
         const path = './assets/live2d/';
         const folderPath = path + modelName + '/';
         if (modelName === 'grace_yukata_ver5') modelName = 'grace_yukata';

@@ -38,6 +38,9 @@ window.wallpaperPropertyListener = {
                 case "cocona_otona":
                     setTimeout(() => { model.loadModel(modelName) }, 1420);
                     break;
+                case "tsumabuki_ver6":
+                    setTimeout(() => { model.loadModel(modelName) }, 1500);
+                    break;
                 default:
                     setTimeout(() => { model.loadModel(modelName) }, 1800);
                     break;
@@ -71,8 +74,8 @@ window.wallpaperPropertyListener = {
                 bgVideo.style.display = 'none';
             }
         }
-        if (properties.volume) {
-            bgm.volume = properties.volume.value / 100;
+        if (properties.bgm) {
+            bgm.volume = properties.bgm.value / 100;
         }
         model.onResize("t");
     }

@@ -79,7 +79,10 @@
                     {
                         "value": "rasis_ver6",
                         "label": "Rasis VI"
-
+                    },
+                    {
+                        "value": "tsumabuki_ver6",
+                        "label": "Tsumabuki"
                     }
                     
                 ]
@@ -126,7 +129,7 @@
                 "min": 0,
                 "max": 100
             },
-            "volume": {
+            "bgm": {
                 "text": "BGM volume",
                 "type": "slider",
                 "value": 0,
