@@ -26,7 +26,7 @@
                     },
                     {
                         "value": "nianoa_ver5",
-                        "label": "Nianoa Ver.5"
+                        "label": "Near & Noah Ver.5"
                     },
                     {
                         "value": "rasis_ver5",
@@ -83,6 +83,10 @@
                     {
                         "value": "tsumabuki_ver6",
                         "label": "Tsumabuki"
+                    },
+                    {
+                        "value": "nianoa_ver6",
+                        "label": "Near & Noah VI"
                     }
                     
                 ]

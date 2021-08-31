@@ -4,7 +4,6 @@ let model = new Live2dModel();
 const bgVideo = document.getElementById("bg-video");
 const bg = document.getElementById('bg');
 const bgm = document.getElementById('bgm');
-
 let flag = false;
 
 window.wallpaperPropertyListener = {
@@ -16,11 +15,10 @@ window.wallpaperPropertyListener = {
                 if (typeof model.model.motion === "function") {
                     model.model.motion("Out", 0, 3);
                     oldModelname = modelName;
-                    console.log("???");
                 }
 
             modelName = properties.modelName.value;
-            switch (oldModelname) {
+            switch (oldModelname) { // need to set model out motion time if the model reappear after out motion
                 case "rasis_ver5":
                     setTimeout(() => { model.loadModel(modelName) }, 1583);
                     break;
@@ -41,13 +39,13 @@ window.wallpaperPropertyListener = {
                 case "tsumabuki_ver6":
                     setTimeout(() => { model.loadModel(modelName) }, 1500);
                     break;
+                case "nianoa_ver6":
+                    setTimeout(() => { model.loadModel(modelName) }, 1717);
+                    break;
                 default:
                     setTimeout(() => { model.loadModel(modelName) }, 1800);
                     break;
             }
-
-            //model.destroy();
-            //setTimeout(() => { model.loadModel(modelName) }, 2500);
         }
         if (properties.modelX) {
             let modelX = properties.modelX.value;
@@ -74,6 +72,7 @@ window.wallpaperPropertyListener = {
                 bgVideo.style.display = 'none';
             }
         }
+        //BGM volume fix for new version Wallpaper Engine
         if (properties.bgm) {
             bgm.volume = properties.bgm.value / 100;
         }
@@ -83,9 +82,9 @@ window.wallpaperPropertyListener = {
 
 document.getElementById('live2d').addEventListener('pointerdown', (e) => {
     model.model.focus(e.clientX, e.clientY);
+    model.model.motion("Ok", 0, 3);
     flag = true;
 })
-
 
 document.getElementById('live2d').addEventListener('pointermove', (e) => {
     if (flag) {
@@ -100,31 +99,34 @@ document.getElementById('live2d').addEventListener('pointerup', (e) => {
     model.model.focus(width / 2 + model.modelX * 9, height / 2 + model.modelY * 3);
 })
 
-document.getElementById('live2d').addEventListener('onclick', (e) => {
-    model.model.motion("Ok", 0, 2);
-});
+// Still figuring out how to handle/change motion
 
-window.addEventListener('keydown', (e) => {
-    if (e.isComposing || e.key === 'o') {
-        model.model.motion("Ok", 0, 2);
-        return;
-    }
+// window.addEventListener('onclick', (e) => {
+//     model.model.motion("Ok", 0, 2);
+// });
 
-    if (e.isComposing || e.key === 'g') {
-        model.model.motion("R_Good", 0, 2);
-        return;
-    }
+// window.addEventListener('keydown', (e) => {
+//     console.log(e.key);
+//     if (e.isComposing || e.key === 'o') {
+//         model.model.motion("Ok", 0, 2);
+//         return;
+//     }
 
-    if (e.isComposing || e.key === 'v') {
-        model.model.motion("R_Verygood", 0, 2);
-        return;
-    }
+//     if (e.isComposing || e.key === 'g') {
+//         model.model.motion("R_Good", 0, 2);
+//         return;
+//     }
 
-    if (e.isComposing || e.key === 'b') {
-        model.model.motion("R_Bad", 0, 2);
-        return;
-    }
-})
+//     if (e.isComposing || e.key === 'v') {
+//         model.model.motion("R_Verygood", 0, 2);
+//         return;
+//     }
+
+//     if (e.isComposing || e.key === 'b') {
+//         model.model.motion("R_Bad", 0, 2);
+//         return;
+//     }
+// })
 
 window.addEventListener('resize', (e) => {
     model.onResize("");
