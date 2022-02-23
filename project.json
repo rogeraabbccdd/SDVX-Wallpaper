@@ -3,7 +3,6 @@
     "general": {
         "properties": {
             "backgroundversion": {
-                "condition": "bgType.value == \"pic\"",
                 "index": 7,
                 "options": [{
                         "label": "VividWave",

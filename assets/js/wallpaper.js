@@ -76,8 +76,10 @@ window.wallpaperPropertyListener = {
         if (properties.backgroundversion) {
             if (properties.backgroundversion.value === 'bg') {
                 bg.style.backgroundImage = 'url(./assets/background/bg.jpg)';
+                bgVideo.src = './assets/background/bg.webm';
             } else {
                 bg.style.backgroundImage = 'url(./assets/background/bg2.png)';
+                bgVideo.src = './assets/background/bg2.webm';
             }
         }
 

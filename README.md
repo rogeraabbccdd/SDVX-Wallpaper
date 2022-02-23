@@ -27,7 +27,6 @@ SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/
 - [ ] Precise X,Y,and size adjustment.
 - [x] Fix changing models bug.
 
-
 ## Credits
 - Default `bg.webm` is taken from [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1940540424)
 - Live2D framework from [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display), if you like this work, don't forget to star this project too!
