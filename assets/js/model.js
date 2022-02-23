@@ -38,7 +38,6 @@ class Live2dModel {
     }
 
     onResize(event) {
-        //this.model.motion('Out', 0, 1);
         if (event === void 0) {
             event = null;
         }
@@ -75,11 +74,8 @@ class Live2dModel {
         const folderPath = path + modelName + '/';
         if (modelName === 'grace_yukata_ver5') modelName = 'grace_yukata';
         let jsonPath = folderPath + (modelName === 'grace_ver5' ? modelName + '_0102' : modelName === 'rasis_ver5' ? modelName + '_0103' : modelName === "natsuhi_otona" ? modelName + '_0100' : modelName + '_0101') + '.model3.json';
-        // console.log(jsonPath);
-
         let modelData = await live2d.Live2DModel.from(jsonPath, { idleMotionGroup: 'Idle', motionPreload: "ALL", autoInteract: false });
         this.model = modelData;
-        // console.log(this.model);
         document.getElementById('live2d').appendChild(this.app.view);
         this.app.stage.addChild(this.model);
 

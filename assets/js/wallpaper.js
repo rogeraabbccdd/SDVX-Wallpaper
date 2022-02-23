@@ -72,6 +72,15 @@ window.wallpaperPropertyListener = {
                 bgVideo.style.display = 'none';
             }
         }
+
+        if (properties.backgroundversion) {
+            if (properties.backgroundversion.value === 'bg') {
+                bg.style.backgroundImage = 'url(./assets/background/bg.jpg)';
+            } else {
+                bg.style.backgroundImage = 'url(./assets/background/bg2.png)';
+            }
+        }
+
         //BGM volume fix for new version Wallpaper Engine
         if (properties.bgm) {
             bgm.volume = properties.bgm.value / 100;

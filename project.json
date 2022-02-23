@@ -1,147 +1,183 @@
 {
     "file": "index.html",
-    "preview": "preview.png",
     "general": {
         "properties": {
+            "backgroundversion": {
+                "condition": "bgType.value == \"pic\"",
+                "index": 7,
+                "options": [{
+                        "label": "VividWave",
+                        "value": "bg"
+                    },
+                    {
+                        "label": "Exceed Gear",
+                        "value": "bg2"
+                    }
+                ],
+                "order": 107,
+                "text": "Background Version",
+                "type": "combo",
+                "value": "bg"
+            },
+            "bgBright": {
+                "index": 0,
+                "max": 100,
+                "min": 0,
+                "order": 100,
+                "text": "Background Brightness",
+                "type": "slider",
+                "value": 100
+            },
+            "bgType": {
+                "index": 1,
+                "options": [{
+                        "label": "Video",
+                        "value": "video"
+                    },
+                    {
+                        "label": "Picture",
+                        "value": "pic"
+                    }
+                ],
+                "order": 101,
+                "text": "Background Type",
+                "type": "combo",
+                "value": "video"
+            },
+            "bgm": {
+                "index": 2,
+                "max": 100,
+                "min": 0,
+                "order": 102,
+                "text": "BGM volume",
+                "type": "slider",
+                "value": 0
+            },
+            "modelName": {
+                "index": 3,
+                "options": [{
+                        "label": "Grace Ver.5",
+                        "value": "grace_ver5"
+                    },
+                    {
+                        "label": "Grace Yukata Ver.5",
+                        "value": "grace_yukata_ver5"
+                    },
+                    {
+                        "label": "Kureha Ver.5",
+                        "value": "kureha_ver5"
+                    },
+                    {
+                        "label": "Near & Noah Ver.5",
+                        "value": "nianoa_ver5"
+                    },
+                    {
+                        "label": "Rasis Ver.5",
+                        "value": "rasis_ver5"
+                    },
+                    {
+                        "label": "Reimu Ver.5",
+                        "value": "reimu_ver5"
+                    },
+                    {
+                        "label": "Right Ver.5",
+                        "value": "right_ver5"
+                    },
+                    {
+                        "label": "Cocona Otona",
+                        "value": "cocona_otona"
+                    },
+                    {
+                        "label": "Left Ver.5",
+                        "value": "left_ver5"
+                    },
+                    {
+                        "label": "Nana Ver.5",
+                        "value": "nana_ver5"
+                    },
+                    {
+                        "label": "Natsuhi Otona",
+                        "value": "natsuhi_otona"
+                    },
+                    {
+                        "label": "Konoha Ver.5",
+                        "value": "konoha_ver5"
+                    },
+                    {
+                        "label": "Kureha 9th KAC",
+                        "value": "kureha_9thkac"
+                    },
+                    {
+                        "label": "Kureha 666",
+                        "value": "kureha_666"
+                    },
+                    {
+                        "label": "Grace VI",
+                        "value": "grace_ver6"
+                    },
+                    {
+                        "label": "Grace VI April",
+                        "value": "grace_ver6april"
+                    },
+                    {
+                        "label": "Rasis VI",
+                        "value": "rasis_ver6"
+                    },
+                    {
+                        "label": "Tsumabuki",
+                        "value": "tsumabuki_ver6"
+                    },
+                    {
+                        "label": "Near & Noah VI",
+                        "value": "nianoa_ver6"
+                    },
+                    {
+                        "label": "Kaworu & Ashita",
+                        "value": "kawoashi_ver6"
+                    }
+                ],
+                "order": 103,
+                "text": "Live2d Model",
+                "type": "combo",
+                "value": "grace_ver5"
+            },
+            "modelSize": {
+                "index": 4,
+                "max": 100,
+                "min": 1,
+                "order": 104,
+                "text": "Live2d Size",
+                "type": "slider",
+                "value": 50
+            },
+            "modelX": {
+                "index": 5,
+                "max": 100,
+                "min": -100,
+                "order": 105,
+                "text": "Live2d X",
+                "type": "slider",
+                "value": 0
+            },
+            "modelY": {
+                "index": 6,
+                "max": 100,
+                "min": -100,
+                "order": 106,
+                "text": "Live2d Y",
+                "type": "slider",
+                "value": 0
+            },
             "schemecolor": {
+                "order": 0,
                 "text": "Scheme color",
                 "type": "color",
                 "value": "0.7 0.2 0.1"
-            },
-            "modelName": {
-                "text": "Live2d Model",
-                "type": "combo",
-                "value": "grace_ver5",
-                "options": [{
-                        "value": "grace_ver5",
-                        "label": "Grace Ver.5"
-                    },
-                    {
-                        "value": "grace_yukata_ver5",
-                        "label": "Grace Yukata Ver.5"
-                    },
-                    {
-                        "value": "kureha_ver5",
-                        "label": "Kureha Ver.5"
-                    },
-                    {
-                        "value": "nianoa_ver5",
-                        "label": "Near & Noah Ver.5"
-                    },
-                    {
-                        "value": "rasis_ver5",
-                        "label": "Rasis Ver.5"
-                    },
-                    {
-                        "value": "reimu_ver5",
-                        "label": "Reimu Ver.5"
-                    },
-                    {
-                        "value": "right_ver5",
-                        "label": "Right Ver.5"
-                    },
-                    {
-                        "value": "cocona_otona",
-                        "label": "Cocona Otona"
-                    },
-                    {
-                        "value": "left_ver5",
-                        "label": "Left Ver.5"
-                    },
-                    {
-                        "value": "nana_ver5",
-                        "label": "Nana Ver.5"
-                    },
-                    {
-                        "value": "natsuhi_otona",
-                        "label": "Natsuhi Otona"
-                    },
-                    {
-                        "value": "konoha_ver5",
-                        "label": "Konoha Ver.5"
-                    },
-                    {
-                        "value": "kureha_9thkac",
-                        "label": "Kureha 9th KAC"
-                    },
-                    {
-                        "value": "kureha_666",
-                        "label": "Kureha 666"
-                    },
-                    {
-                        "value": "grace_ver6",
-                        "label": "Grace VI"
-                    },
-                    {
-                        "value": "grace_ver6april",
-                        "label": "Grace VI April"
-                    },
-                    {
-                        "value": "rasis_ver6",
-                        "label": "Rasis VI"
-                    },
-                    {
-                        "value": "tsumabuki_ver6",
-                        "label": "Tsumabuki"
-                    },
-                    {
-                        "value": "nianoa_ver6",
-                        "label": "Near & Noah VI"
-                    }
-                    
-                ]
-            },
-            "modelX": {
-                "text": "Live2d X",
-                "type": "slider",
-                "value": 0,
-                "min": -100,
-                "max": 100
-            },
-            "modelY": {
-                "text": "Live2d Y",
-                "type": "slider",
-                "value": 0,
-                "min": -100,
-                "max": 100
-            },
-            "modelSize": {
-                "text": "Live2d Size",
-                "type": "slider",
-                "value": 50,
-                "min": 1,
-                "max": 100
-            },
-            "bgType": {
-                "text": "Background Type",
-                "type": "combo",
-                "value": "video",
-                "options": [{
-                        "value": "video",
-                        "label": "Video"
-                    },
-                    {
-                        "value": "pic",
-                        "label": "Picture"
-                    }
-                ]
-            },
-            "bgBright": {
-                "text": "Background Brightness",
-                "type": "slider",
-                "value": 100,
-                "min": 0,
-                "max": 100
-            },
-            "bgm": {
-                "text": "BGM volume",
-                "type": "slider",
-                "value": 0,
-                "min": 0,
-                "max": 100
             }
         }
     },
+    "preview": "preview.png",
     "title": "SDVX Live2D",
-    "type": "web"
+    "type": "web",
+    "version": 0
 }
