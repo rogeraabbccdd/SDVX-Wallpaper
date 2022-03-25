@@ -52,6 +52,20 @@
                 "type": "slider",
                 "value": 0
             },
+            "crteffect": {
+                "index": 8,
+                "order": 108,
+                "text": "CRT Effect",
+                "type": "bool",
+                "value": false
+            },
+            "glassbreakeffect": {
+                "index": 9,
+                "order": 109,
+                "text": "GlassBreak Effect",
+                "type": "bool",
+                "value": false
+            },
             "modelName": {
                 "index": 3,
                 "options": [{
@@ -133,6 +147,30 @@
                     {
                         "label": "Kaworu & Ashita",
                         "value": "kawoashi_ver6"
+                    },
+                    {
+                        "label": "Suzuki Hina",
+                        "value": "suzukihina_ver6"
+                    },
+                    {
+                        "label": "Tanaka Hime",
+                        "value": "tanakahime_ver6"
+                    },
+                    {
+                        "label": "Hiyuki X'mas",
+                        "value": "hiyuki_santa"
+                    },
+                    {
+                        "label": "Mion 10th Kac",
+                        "value": "mion_10thkac"
+                    },
+                    {
+                        "label": "Rasis 10th KAC",
+                        "value": "rasis_10thkac"
+                    },
+                    {
+                        "label": "Rasis Xhrono",
+                        "value": "rasis_xhrono"
                     }
                 ],
                 "order": 103,
@@ -147,7 +185,7 @@
                 "order": 104,
                 "text": "Live2d Size",
                 "type": "slider",
-                "value": 50
+                "value": 30
             },
             "modelX": {
                 "index": 5,
