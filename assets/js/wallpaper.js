@@ -10,15 +10,23 @@ window.wallpaperPropertyListener = {
     applyUserProperties(properties) {
 
         if (properties.modelName) {
-            let oldModelname = "";
+            var oldModelname = "";
             if (!(typeof model.model === "undefined"))
                 if (typeof model.model.motion === "function") {
-                    model.model.motion("Out", 0, 3);
+
+                    if (modelName == 'mion_10thkac') {
+                        model.model.motion("Out1", 0, 3);
+                    } else if (modelName == 'grace_10thkac') {
+                        model.model.motion("Final", 0, 3);
+                    } else {
+                        model.model.motion("Out", 0, 3);
+                    }
+
                     if (model.twomodels) {
                         model.model2.motion("Out", 0, 3);
                     }
                     oldModelname = modelName;
-                    console.log("???");
+
                 }
 
             modelName = properties.modelName.value;
@@ -52,8 +60,26 @@ window.wallpaperPropertyListener = {
                 case "tanakahime_ver6":
                     setTimeout(() => { model.loadModel(modelName) }, 1550);
                     break;
+                case "mion_10thkac":
+                    setTimeout(() => { model.loadModel(modelName) }, 2170);
+                    break;
                 case "rasis_xhrono":
                     setTimeout(() => { model.loadModel(modelName) }, 2183);
+                    break;
+                case "grace_10thkac":
+                    setTimeout(() => { model.loadModel(modelName) }, 9880);
+                    break;
+                case "ortlinde_normal":
+                    setTimeout(() => { model.loadModel(modelName) }, 1883);
+                    break;
+                case "konosuba_aqua":
+                    setTimeout(() => { model.loadModel(modelName) }, 1633);
+                    break;
+                case "rasis_redbull5g":
+                    setTimeout(() => { model.loadModel(modelName) }, 1917);
+                    break;
+                case "rasis_energy":
+                    setTimeout(() => { model.loadModel(modelName) }, 1650);
                     break;
                 default:
                     setTimeout(() => { model.loadModel(modelName) }, 1800);
@@ -91,15 +117,15 @@ window.wallpaperPropertyListener = {
 
         if (properties.backgroundversion) {
             if (properties.backgroundversion.value === 'bg') {
-                bg.style.backgroundImage = 'url(./assets/background/bg.jpg)';
+                //bg.style.backgroundImage = 'url(./assets/background/bg.jpg)';
                 //bgVideo.src = './assets/background/bg.webm';
-                model.bgURL = "assets/background/bg.jpg"
+                model.bgURL = "./assets/background/bg.jpg"
                 model.videoURL = "assets/background/bg.webm";
                 model.updateBg(2);
             } else {
-                bg.style.backgroundImage = 'url(./assets/background/bg2.png)';
+                //bg.style.backgroundImage = 'url(./assets/background/bg2.png)';
                 //bgVideo.src = './assets/background/bg2.webm';
-                model.bgURL = "assets/background/bg2.jpg"
+                model.bgURL = "./assets/background/bg2.png"
                 model.videoURL = "assets/background/bg2.webm";
                 model.updateBg(2);
             }
@@ -120,6 +146,8 @@ window.wallpaperPropertyListener = {
             model.glassBreakEffect = properties.glassbreakeffect.value
         }
         model.onResize("t");
+        model.videoContext.texture.baseTexture.resource.source.pause();
+        model.updateBg(2);
     }
 };
 
@@ -147,15 +175,12 @@ document.getElementById('live2d').addEventListener('pointerup', (e) => {
     flag = false;
     let width = window.innerWidth;
     let height = window.innerHeight;
-    model.model.focus(width / 2 + model.modelX * 9, height / 2 + model.modelY * 3);
+    model.model.focus(model.model.x, model.model.y);
     if (model.twomodels) {
-        model.model2.focus(width / 2 + model.modelX * 9, height / 2 + model.modelY * 3);
+        model.model2.focus(model.model2.x, model.model2.y);
     }
 })
 
-window.addEventListener('onclick', (e) => {
-    model.model.motion("Ok", 0, 2);
-});
 
 window.addEventListener('keydown', (e) => {
     console.log(e.key);
