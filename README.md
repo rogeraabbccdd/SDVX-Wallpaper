@@ -31,13 +31,13 @@ You might need to convert the file into mp3 format, as the file originally from 
 - Loading model from SDVX.
 - Clicking on model gives motion reaction.
 - Support X,Y cordinate and size adjustment in Wallpaper Engine.(Some model would be too big or small)
+- (BETA) Special Show in game, might have bugs, welcome for opening issues.
 
 ## Future Features
+- [x] Precise X,Y,and size adjustment.
+- [x] Fix changing models bug.
 - [ ] Auto random motions.
 - [ ] Allow edit click motion reaction.
-- [ ] Precise X,Y,and size adjustment.
-- [x] Fix changing models bug.
-
 
 ## Credits
 - Default `bg.webm` is taken from [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1940540424)
