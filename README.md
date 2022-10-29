@@ -16,6 +16,17 @@ SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/
 - Get your favorite SDVX wallpaper image, and put it in `assets/background/bg.jpg`.
 - Import folder to Wallpaper Engine. 
 
+### Optional
+If you want Aqua to have sound, go get the lines in the game files, and rename the sound you want from orignal name to the following filenames.
+- /asset/sound/good.mp3
+- /asset/sound/good2.mp3
+- /asset/sound/vgood.mp3
+- /asset/sound/vgood2.mp3
+- /asset/sound/bad.mp3
+- /asset/sound/bad2.mp3
+
+You might need to convert the file into mp3 format, as the file originally from the game, this is not provided.
+
 ## Features
 - Loading model from SDVX.
 - Clicking on model gives motion reaction.
