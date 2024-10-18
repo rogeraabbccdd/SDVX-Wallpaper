@@ -11,6 +11,10 @@
                     {
                         "label": "Exceed Gear",
                         "value": "bg2"
+                    },
+                    {
+                        "label": "bg_0019",
+                        "value": "bg_0019"
                     }
                 ],
                 "order": 107,
@@ -188,12 +192,100 @@
                     {
                         "label": "Rasis Energy",
                         "value": "rasis_energy"
+                    },
+                    {
+                        "label": "effect_hexathlon_bpl",
+                        "value": "effect_hexathlon_bpl"
+                    },
+                    {
+                        "label": "grace_mini",
+                        "value": "grace_mini"
+                    },
+                    {
+                        "label": "grace_mixxion_game",
+                        "value": "grace_mixxion_game"
+                    },
+                    {
+                        "label": "grace_suddendeath",
+                        "value": "grace_suddendeath"
+                    },
+                    {
+                        "label": "grace_sudden_game",
+                        "value": "grace_sudden_game"
+                    },
+                    {
+                        "label": "haruka",
+                        "value": "haruka"
+                    },
+                    {
+                        "label": "kanade_normal",
+                        "value": "kanade_normal"
+                    },
+                    {
+                        "label": "kureha_ver6",
+                        "value": "kureha_ver6"
+                    },
+                    {
+                        "label": "left_right_hexathlon_bpl",
+                        "value": "left_right_hexathlon_bpl"
+                    },
+                    {
+                        "label": "maxima_vm",
+                        "value": "maxima_vm"
+                    },
+                    {
+                        "label": "mion_xhrono",
+                        "value": "mion_xhrono"
+                    },
+                    {
+                        "label": "natsuhi_bunny",
+                        "value": "natsuhi_bunny"
+                    },
+                    {
+                        "label": "nekomata_okayu",
+                        "value": "nekomata_okayu"
+                    },
+                    {
+                        "label": "ortlinde_akasha",
+                        "value": "ortlinde_akasha"
+                    },
+                    {
+                        "label": "ortlinde_akasha_game",
+                        "value": "ortlinde_akasha_game"
+                    },
+                    {
+                        "label": "ortlinde_akasha_kac",
+                        "value": "ortlinde_akasha_kac"
+                    },
+                    {
+                        "label": "rasis_hexathlon_bpl",
+                        "value": "rasis_hexathlon_bpl"
+                    },
+                    {
+                        "label": "rezero_emilia",
+                        "value": "rezero_emilia"
+                    },
+                    {
+                        "label": "rezero_rem",
+                        "value": "rezero_rem"
+                    },
+                    {
+                        "label": "shirakami_fubuki",
+                        "value": "shirakami_fubuki"
+                    },
+                    {
+                        "label": "tsumabuki_setu-o",
+                        "value": "tsumabuki_setu-o"
+                    },
+                    {
+                        "label": "tsunomaki_watame",
+                        "value": "tsunomaki_watame"
                     }
                 ],
                 "order": 103,
                 "text": "Live2d Model",
                 "type": "combo",
-                "value": "grace_ver5"
+                "value": "konoha_ver5"
             },
             "modelSize": {
                 "index": 4,
@@ -202,7 +294,7 @@
                 "order": 104,
                 "text": "Live2d Size",
                 "type": "slider",
-                "value": 30
+                "value": 50
             },
             "modelX": {
                 "index": 5,
@@ -220,7 +312,7 @@
                 "order": 106,
                 "text": "Live2d Y",
                 "type": "slider",
-                "value": 0
+                "value": 37
             },
             "schemecolor": {
                 "order": 0,

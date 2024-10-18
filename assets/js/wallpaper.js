@@ -1,4 +1,4 @@
-let modelName = "konoha_ver5";
+let modelName = "";
 let model = new Live2dModel();
 // model.loadModel(modelName);
 const bgVideo = document.getElementById("bg-video");
@@ -82,7 +82,7 @@ window.wallpaperPropertyListener = {
                     setTimeout(() => { model.loadModel(modelName) }, 1650);
                     break;
                 default:
-                    setTimeout(() => { model.loadModel(modelName) }, 1800);
+                    setTimeout(() => { model.loadModel(modelName) }, 3000);
                     break;
             }
         }
@@ -116,19 +116,9 @@ window.wallpaperPropertyListener = {
         }
 
         if (properties.backgroundversion) {
-            if (properties.backgroundversion.value === 'bg') {
-                //bg.style.backgroundImage = 'url(./assets/background/bg.jpg)';
-                //bgVideo.src = './assets/background/bg.webm';
-                model.bgURL = "./assets/background/bg.jpg"
-                model.videoURL = "assets/background/bg.webm";
-                model.updateBg(2);
-            } else {
-                //bg.style.backgroundImage = 'url(./assets/background/bg2.png)';
-                //bgVideo.src = './assets/background/bg2.webm';
-                model.bgURL = "./assets/background/bg2.png"
-                model.videoURL = "assets/background/bg2.webm";
-                model.updateBg(2);
-            }
+            model.bgURL = "./assets/background/"+ properties.backgroundversion.value +".png"
+            model.videoURL = "assets/background/"+ properties.backgroundversion.value +".webm";
+            model.updateBg(2);
         }
 
         if (properties.bgm) {
