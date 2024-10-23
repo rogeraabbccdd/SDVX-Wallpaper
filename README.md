@@ -1,6 +1,6 @@
 # SDVX Live2D Wallpaper
-SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), support all Live2D models from SDVX VI 2021062900
-# NOTE: n-0 data is not and will not be supported, once the data is out of n-0 state, there will be plan to be update.
+SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), support all Live2D models from SDVX.
+## NOTE: n-0 data is not and will not be supported, once the data is out of n-0 state, there will be plan to be update.
   
 ![screenshot1](screenshot1.jpg)
 ![screenshot2](screenshot2.png)
@@ -37,6 +37,9 @@ You might need to convert the file into mp3 format, as the file originally from 
 - Clicking on model gives motion reaction.
 - Support X,Y cordinate and size adjustment in Wallpaper Engine.(Some model would be too big or small)
 - (BETA) Special Show in game, might have bugs, welcome for opening issues.
+
+> [!WARNING]
+> Currently, BPL2 SuddenDeath side hexagon effect is still in progress, so the animation might stuck.
 
 ## Future Features
 - [x] Precise X,Y,and size adjustment.
