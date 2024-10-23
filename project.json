@@ -59,6 +59,13 @@
                 "type": "bool",
                 "value": false
             },
+            "glassbreakeffect": {
+                "index": 9,
+                "order": 109,
+                "text": "GlassBreak Effect",
+                "type": "bool",
+                "value": false
+            },
             "modelName": {
                 "index": 3,
                 "options": [{
@@ -154,12 +161,8 @@
                         "value": "hiyuki_santa"
                     },
                     {
-                        "label": "Mion 10th Kac",
+                        "label": "Rasis & Mion 10th KAC",
                         "value": "mion_10thkac"
-                    },
-                    {
-                        "label": "Rasis 10th KAC",
-                        "value": "rasis_10thkac"
                     },
                     {
                         "label": "Rasis Xhrono",
@@ -188,6 +191,82 @@
                     {
                         "label": "Rasis Energy",
                         "value": "rasis_energy"
+                    },
+                    {
+                        "label": "Kureha Ver6",
+                        "value": "kureha_ver6"
+                    },
+                    {
+                        "label": "Grace SuddeИDeath",
+                        "value": "grace_suddendeath"
+                    },
+                    {
+                        "label": "Maxima VM",
+                        "value": "maxima_vm"
+                    },
+                    {
+                        "label": "Tsumabuki Setu-O",
+                        "value": "tsumabuki_setu-o"
+                    },
+                    {
+                        "label": "Grace SuddeИDeath BPL",
+                        "value": "grace_sudden_game"
+                    },
+                    {
+                        "label": "Re:Zero Rem",
+                        "value": "rezero_rem"
+                    },
+                    {
+                        "label": "Re:Zero Emilia",
+                        "value": "rezero_emilia"
+                    },
+                    {
+                        "label": "Haruka",
+                        "value": "haruka"
+                    },
+                    {
+                        "label": "Kanade",
+                        "value": "kanade_normal"
+                    },
+                    {
+                        "label": "Shirakami Fubuki",
+                        "value": "shirakami_fubuki"
+                    },
+                    {
+                        "label": "Ortlinde 11th KAC",
+                        "value": "ortlinde_akasha_kac"
+                    },
+                    {
+                        "label": "Ortlinde Akasha CREATE",
+                        "value": "ortlinde_akasha_0101"
+                    },
+                    {
+                        "label": "Ortlinde Akasha DESTROY",
+                        "value": "ortlinde_akasha_0102"
+                    },
+                    {
+                        "label": "NEMSYS ARENA World Hexathlon BPL",
+                        "value": "bpl3"
+                    },
+                    {
+                        "label": "World Hexathlon Left",
+                        "value": "left_hexathlon"
+                    },
+                    {
+                        "label": "World Hexathlon Right",
+                        "value": "right_hexathlon"
+                    },
+                    {
+                        "label": "World Hexathlon Rasis",
+                        "value": "rasis_hexathlon"
+                    },
+                    {
+                        "label": "Nekomata Okayu",
+                        "value": "nekomata_okayu"
+                    },
+                    {
+                        "label": "Grace Mini",
+                        "value": "grace_mini"
                     }
                 ],
                 "order": 103,

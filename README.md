@@ -12,6 +12,10 @@ SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/
 - Download repo.
 - Download `live2dcubismcore.min.js` from [here](https://www.live2d.com/download/cubism-sdk/download-web/), and put it in `assets/js/`.
 - Get your SDVX Live2D models from somewhere, and put them in `assets/live2d/`.
+
+> [!IMPORTANT]
+> For Hexathalon BPL, you need to manually copy `left_right_hexathlon_bpl` into another folder, and rename the folder to `left_right_hexathlon_bpl_b`, then go into the folder rename the file `left_right_hexathlon_bpl.model3` into `left_right_hexathlon_bpl_b.model3`. Both `left_right_hexathlon_bpl` and `left_right_hexathlon_bpl_b` folder should exist, this is due to the loading system cannot load two models with the same name, as in the model, Left and Right's model is literally using the same model but different attributes.
+
 - Download BGM from [here](https://www.youtube.com/watch?v=tBd_QlnYwNg), or any mp3 you want, put it in `assets/sound/bgm.mp3`.
 - Get your SDVX `testbg2_fhd.wmv` from somewhere, or any background video you want, convert it to webm format and put it in `assets/background/bg.webm`.
 - Get your favorite SDVX wallpaper image, and put it in `assets/background/bg.jpg`.

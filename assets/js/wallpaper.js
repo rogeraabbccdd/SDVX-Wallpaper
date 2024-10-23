@@ -32,8 +32,8 @@ window.wallpaperPropertyListener = {
             modelName = properties.modelName.value;
             switch (oldModelname) {
                 case "rasis_ver5":
-                    setTimeout(() => { model.loadModel(modelName) }, 1583);
-                    break;
+                setTimeout(() => { model.loadModel(modelName) }, 1583);
+                break;
                 case "kureha_666":
                 case "natsuhi_otona":
                     setTimeout(() => { model.loadModel(modelName) }, 2050);
@@ -63,6 +63,9 @@ window.wallpaperPropertyListener = {
                 case "mion_10thkac":
                     setTimeout(() => { model.loadModel(modelName) }, 2170);
                     break;
+                case "rasis_10thkac":
+                    setTimeout(() => { model.loadModel(modelName) }, 3167);
+                    break;
                 case "rasis_xhrono":
                     setTimeout(() => { model.loadModel(modelName) }, 2183);
                     break;
@@ -80,6 +83,29 @@ window.wallpaperPropertyListener = {
                     break;
                 case "rasis_energy":
                     setTimeout(() => { model.loadModel(modelName) }, 1650);
+                    break;
+                case "maxima_vm":
+                    setTimeout(() => { model.loadModel(modelName) }, 1583);
+                    break;
+                case "grace_sudden_game":
+                    setTimeout(() => { model.loadModel(modelName) }, 2283);
+                    break;
+                case "rezero_rem":
+                    setTimeout(() => { model.loadModel(modelName) }, 1733);
+                    break;
+                case "rezero_emilia":
+                    setTimeout(() => { model.loadModel(modelName) }, 1667);
+                    break;
+                case "shirakami_fubuki":
+                    setTimeout(() => { model.loadModel(modelName) }, 2483);
+                    break;
+                case "ortlinde_akasha_kac":
+                case "ortlinde_akasha_game":
+                    setTimeout(() => { model.loadModel(modelName) }, 12633);
+                    break;
+                case "ortlinde_akasha_0101":
+                case "ortlinde_akasha_0102":
+                    setTimeout(() => { model.loadModel(modelName) }, 1742);
                     break;
                 default:
                     setTimeout(() => { model.loadModel(modelName) }, 1800);
@@ -157,6 +183,11 @@ document.getElementById('live2d').addEventListener('pointerdown', (e) => {
         model.model2.focus(e.clientX, e.clientY);
         //model.model2.motion("Ok",0,3);
     }
+
+    if (model.threemodels){
+        model.model2.focus(e.clientX, e.clientY);
+        model.model3.focus(e.clientX, e.clientY);
+    }
     //model.model.motion("Ok", 0, 3);
     flag = true;
 })
@@ -168,17 +199,18 @@ document.getElementById('live2d').addEventListener('pointermove', (e) => {
         if (model.twomodels) {
             model.model2.focus(e.clientX, e.clientY);
         }
+
+        if (model.threemodels){
+            model.model2.focus(e.clientX, e.clientY);
+            model.model3.focus(e.clientX, e.clientY);
+        
+        }
     }
 });
 
 document.getElementById('live2d').addEventListener('pointerup', (e) => {
     flag = false;
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    model.model.focus(model.model.x, model.model.y);
-    if (model.twomodels) {
-        model.model2.focus(model.model2.x, model.model2.y);
-    }
+    model.resetFocus()
 })
 
 

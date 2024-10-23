@@ -5,29 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SDVX Wallpaper</title>
     <link rel="stylesheet" href="./assets/css/sdvx.css">
 </head>
 
-<body>
+<body style="background-color: #000000;">
     <!-- <div id="bg"> -->
     <!-- <video autoplay muted loop id="bg-video" src="./assets/background/bg.webm"></video> -->
     <!-- </div> -->
-    <audio src="./assets/sound/bgm.mp3" id="bgm" autoplay loop volume="0"></audio>
+    <!-- <audio src="./assets/sound/bgm.mp3" id="bgm" autoplay loop volume="0"></audio> -->
     <div id="live2d"></div>
     <!-- Fetch and XHR are not working when loading local live2d json file :() -->
+
+    <!--By including below library in your project you agree to http://live2d.com/eula/live2d-proprietary-software-license-agreement_en.html-->
+    <script src="./assets/js/live2dcubismcore.min.js"></script>
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/pixi.min.js"></script>
+    <script src="./assets/js/cubism4.min.js"></script>
     <script src="./assets/js/howler.js"></script>
     <script src="./assets/js/tweenjs.min.js"></script>
     <script src="./assets/js/pixi-filters.js"></script>
-    <!--By including below library in your project you agree to http://live2d.com/eula/live2d-proprietary-software-license-agreement_en.html-->
-    <script src="./assets/js/live2dcubismcore.min.js"></script>
-    <script src="./assets/js/cubism4.min.js"></script>
-    <!--script src="./assets/js/live2dcubismpixi.js"></script-->
+    <!-- <script src="./assets/js/lil-gui.js"></script> -->
+    <!-- <script src="./assets/js/stats.min.js"></script> -->
+    <script src="./assets/js/hexagon-left.js"></script>
+    <script src="./assets/js/hexagon-right.js"></script>
     <script src="./assets/js/model.js"></script>
     <script src="./assets/js/wallpaper.js"></script>
-
+    
 </body>
 
 </html>
