@@ -13,20 +13,26 @@ window.wallpaperPropertyListener = {
             var oldModelname = "";
             if (!(typeof model.model === "undefined"))
                 if (typeof model.model.motion === "function") {
-
                     if (modelName == 'mion_10thkac') {
                         model.model.motion("Out1", 0, 3);
                     } else if (modelName == 'grace_10thkac') {
-                        model.model.motion("Final", 0, 3);
+                        model.model.motion("EG1_in", 0, 3);
+                    } else if (modelName == 'grace_sudden_game') {
+                        model.model.motion("EG4_out", 0, 3);
+                    } else if (modelName == 'grace_mixxion_game') {
+                        model.model.motion("Gun1", 0, 3);
+                    } else if (modelName == 'left_right_hexathlon_bpl') {
+                        model.model.motion("Change1a", 0, 3);
+                    } else if (modelName == 'ortlinde_akasha_game') {
+                        model.model.motion("Idle", 0, 3);
+                    } else if (modelName == 'ortlinde_akasha_kac') {
+                        model.model.motion("Idle", 0, 3);
+                    } else if (modelName == 'rasis_hexathlon_bpl') {
+                        model.model.motion("Idle7", 0, 3);
                     } else {
                         model.model.motion("Out", 0, 3);
                     }
-
-                    if (model.twomodels) {
-                        model.model2.motion("Out", 0, 3);
-                    }
                     oldModelname = modelName;
-
                 }
 
             modelName = properties.modelName.value;
@@ -81,8 +87,83 @@ window.wallpaperPropertyListener = {
                 case "rasis_energy":
                     setTimeout(() => { model.loadModel(modelName) }, 1650);
                     break;
+                case "effect_hexathlon_bpl":
+                    setTimeout(() => { model.loadModel(modelName) }, 3050);
+                    break;
+                case "grace_mini":
+                    setTimeout(() => { model.loadModel(modelName) }, 1867);
+                    break;
+                case "grace_mixxion_game":
+                    setTimeout(() => { model.loadModel(modelName) }, 9200);
+                    break;
+                case "grace_suddendeath":
+                    setTimeout(() => { model.loadModel(modelName) }, 1783);
+                    break;
+                case "grace_sudden_game":
+                    setTimeout(() => { model.loadModel(modelName) }, 2283);
+                    break;
+                case "haruka":
+                    setTimeout(() => { model.loadModel(modelName) }, 1820);
+                    break;
+                case "kanade_normal":
+                    setTimeout(() => { model.loadModel(modelName) }, 1667);
+                    break;
+                case "left_hexathlon_bpl":
+                    setTimeout(() => { model.loadModel(modelName) }, 2520);
+                    break;
+                case "right_hexathlon_bpl":
+                    setTimeout(() => { model.loadModel(modelName) }, 2067);
+                    break;
+                case "left_right_hexathlon_bpl":
+                    setTimeout(() => { model.loadModel(modelName) }, 1725);
+                    break;
+                case "maxima_vm":
+                    setTimeout(() => { model.loadModel(modelName) }, 1583);
+                    break;
+                case "mion_xhrono":
+                    setTimeout(() => { model.loadModel(modelName) }, 2183);
+                    break;
+                case "natsuhi_bunny":
+                    setTimeout(() => { model.loadModel(modelName) }, 1833);
+                    break;
+                case "nekomata_okayu":
+                    setTimeout(() => { model.loadModel(modelName) }, 1833);
+                    break;
+                case "ortlinde_akasha":
+                    setTimeout(() => { model.loadModel(modelName) }, 1742);
+                    break;
+                case "ortlinde_akasha_game":
+                    setTimeout(() => { model.loadModel(modelName) }, 5783);
+                    break;
+                case "ortlinde_akasha_kac":
+                    setTimeout(() => { model.loadModel(modelName) }, 5783);
+                    break;
+                case "rasis_hexathlon":
+                    setTimeout(() => { model.loadModel(modelName) }, 2467);
+                    break;
+                case "rasis_hexathlon_bpl":
+                    setTimeout(() => { model.loadModel(modelName) }, 4450);
+                    break;
+                case "rezero_emilia":
+                    setTimeout(() => { model.loadModel(modelName) }, 4883);
+                    break;
+                case "rezero_rem":
+                    setTimeout(() => { model.loadModel(modelName) }, 1733);
+                    break;
+                case "shirakami_fubuki":
+                    setTimeout(() => { model.loadModel(modelName) }, 2483);
+                    break;
+                case "tsumabuki_setu-o":
+                    setTimeout(() => { model.loadModel(modelName) }, 1817);
+                    break;
+                case "tsunomaki_watame":
+                    setTimeout(() => { model.loadModel(modelName) }, 3067);
+                    break;
+                case "cocona_bunny":
+                    setTimeout(() => { model.loadModel(modelName) }, 1820);
+                    break;
                 default:
-                    setTimeout(() => { model.loadModel(modelName) }, 3000);
+                    setTimeout(() => { model.loadModel(modelName) }, 7000);
                     break;
             }
         }

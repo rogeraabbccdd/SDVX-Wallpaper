@@ -211,14 +211,31 @@ class Live2dModel {
 				jsonPath += '_0103.model3.json';
 				break;
 			case 'natsuhi_otona':
+            case 'shirakami_fubuki':
 				jsonPath += '_0100.model3.json';
 				break;
 			case 'konosuba_aqua':
 				jsonPath += '_01.model3.json';
-				break;
+				break;                
+            case 'effect_hexathlon_bpl':
+            case 'grace_mini':
+            case 'grace_mixxion_game':
+            case 'grace_sudden_game':
+            case 'haruka':
+            case 'left_hexathlon_bpl':
+            case 'right_hexathlon_bpl':
+            case 'left_right_hexathlon_bpl':
+            case 'natsuhi_bunny':
+            case 'ortlinde_akasha_game':
+            case 'ortlinde_akasha_kac':
+            case 'rasis_hexathlon':
+            case 'rasis_hexathlon_bpl':
+            case 'rezero_emilia':
+            case 'rezero_rem':
 			case 'rasis_redbull5g':
 			case 'rasis_energy':
-				jsonPath += '.model3.json';
+            case 'tsumabuki_setu-o':
+                jsonPath += '.model3.json';
 				break;
 			default:
 				jsonPath += '_0101.model3.json';

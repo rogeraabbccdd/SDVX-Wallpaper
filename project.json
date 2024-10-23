@@ -194,92 +194,108 @@
                         "value": "rasis_energy"
                     },
                     {
-                        "label": "effect_hexathlon_bpl",
+                        "label": "Effect Hexathlon Bpl",
                         "value": "effect_hexathlon_bpl"
                     },
                     {
-                        "label": "grace_mini",
+                        "label": "Grace Mini",
                         "value": "grace_mini"
                     },
                     {
-                        "label": "grace_mixxion_game",
+                        "label": "Grace Mixxion Game",
                         "value": "grace_mixxion_game"
                     },
                     {
-                        "label": "grace_suddendeath",
+                        "label": "Grace Suddendeath",
                         "value": "grace_suddendeath"
                     },
                     {
-                        "label": "grace_sudden_game",
+                        "label": "Grace Sudden Game",
                         "value": "grace_sudden_game"
                     },
                     {
-                        "label": "haruka",
+                        "label": "Haruka",
                         "value": "haruka"
                     },
                     {
-                        "label": "kanade_normal",
+                        "label": "Kanade Normal",
                         "value": "kanade_normal"
                     },
                     {
-                        "label": "kureha_ver6",
+                        "label": "Kureha Ver6",
                         "value": "kureha_ver6"
                     },
                     {
-                        "label": "left_right_hexathlon_bpl",
+                        "label": "Left Hexathlon Bpl",
+                        "value": "left_hexathlon_bpl"
+                    },
+                    {
+                        "label": "Right Hexathlon Bpl",
+                        "value": "right_hexathlon_bpl"
+                    },
+                    {
+                        "label": "Left Right Hexathlon Bpl",
                         "value": "left_right_hexathlon_bpl"
                     },
                     {
-                        "label": "maxima_vm",
+                        "label": "Maxima Vm",
                         "value": "maxima_vm"
                     },
                     {
-                        "label": "mion_xhrono",
+                        "label": "Mion Xhrono",
                         "value": "mion_xhrono"
                     },
                     {
-                        "label": "natsuhi_bunny",
+                        "label": "Natsuhi Bunny",
                         "value": "natsuhi_bunny"
                     },
                     {
-                        "label": "nekomata_okayu",
+                        "label": "Nekomata Okayu",
                         "value": "nekomata_okayu"
                     },
                     {
-                        "label": "ortlinde_akasha",
+                        "label": "Ortlinde Akasha",
                         "value": "ortlinde_akasha"
                     },
                     {
-                        "label": "ortlinde_akasha_game",
+                        "label": "Ortlinde Akasha Game",
                         "value": "ortlinde_akasha_game"
                     },
                     {
-                        "label": "ortlinde_akasha_kac",
+                        "label": "Ortlinde Akasha Kac",
                         "value": "ortlinde_akasha_kac"
                     },
                     {
-                        "label": "rasis_hexathlon_bpl",
+                        "label": "Rasis Hexathlon",
+                        "value": "rasis_hexathlon"
+                    },
+                    {
+                        "label": "Rasis Hexathlon Bpl",
                         "value": "rasis_hexathlon_bpl"
                     },
                     {
-                        "label": "rezero_emilia",
+                        "label": "REzero Emilia",
                         "value": "rezero_emilia"
                     },
                     {
-                        "label": "rezero_rem",
+                        "label": "REzero Rem",
                         "value": "rezero_rem"
                     },
                     {
-                        "label": "shirakami_fubuki",
+                        "label": "Shirakami Fubuki",
                         "value": "shirakami_fubuki"
                     },
                     {
-                        "label": "tsumabuki_setu-o",
+                        "label": "Tsumabuki Setu-o",
                         "value": "tsumabuki_setu-o"
                     },
                     {
                         "label": "tsunomaki_watame",
                         "value": "tsunomaki_watame"
+                    },
+                    {
+                        "label": "cocona_bunny",
+                        "value": "cocona_bunny"
                     }
                 ],
                 "order": 103,
