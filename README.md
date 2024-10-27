@@ -14,6 +14,9 @@ SDVX Live2D Wallpaper for [Wallpaper Engine](https://store.steampowered.com/app/
 - Get your SDVX Live2D models from somewhere, and put them in `assets/live2d/`.
 
 > [!IMPORTANT]
+> For Maxima, if you want the model having the ability to change sunglasses text from `SDVX` to `森一丁`, you may need to manually adding expression files. By setting the correct parameter to 1, the model will change the text. The expression files are not provided, you need to make expression file yourself. This may require proper Live2D license to do so.
+
+> [!IMPORTANT]
 > For Hexathalon BPL, you need to manually copy `left_right_hexathlon_bpl` into another folder, and rename the folder to `left_right_hexathlon_bpl_b`, then go into the folder rename the file `left_right_hexathlon_bpl.model3` into `left_right_hexathlon_bpl_b.model3`. Both `left_right_hexathlon_bpl` and `left_right_hexathlon_bpl_b` folder should exist, this is due to the loading system cannot load two models with the same name, as in the model, Left and Right's model is literally using the same model but different attributes.
 
 - Download BGM from [here](https://www.youtube.com/watch?v=tBd_QlnYwNg), or any mp3 you want, put it in `assets/sound/bgm.mp3`.
